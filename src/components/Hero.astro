@@ -1,0 +1,81 @@
+<section class="wrapper">
+  <div class="hero">
+    <h1 class="hero-message">
+      We optimize online <span>customer journeys</span> to make you more money
+    </h1>
+    <p class="under-hero">Looptimize improves your company's online journeys through data-driven experimentation. We understand your customers and explore optimization opportunities in order to grow your revenue.</p>
+    <div class="button-list">
+      <button class="primary">Talk With Us</button>
+      <button>Learn How</button>
+    </div>
+  </div>
+  <picture class="promo-art">
+    <img src="images/Illustration-Page.png" height="561" width="757" alt="Customer Journey Optimization doodle">
+  </picture>
+</section>
+
+<style>
+  section {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    background: var(--grape-0);
+  }
+
+  .hero {
+    padding: var(--size-10);
+    display: grid;
+    gap: var(--size-5);
+  }
+
+  .hero-message {
+    display: grid;
+    grid-template-columns: max-content;
+    color: var(--text-1);
+    line-height: var(--font-lineheight-0);
+    animation: 
+      var(--animation-scale-down) reverse,
+      var(--animation-fade-out) reverse;
+    animation-timing-function: var(--ease-squish-5);
+    animation-duration: 1s;
+  }
+
+  .hero-message > span {
+    color: var(--brand);
+  }
+
+  .under-hero {
+    color: var(--text-2);
+    font-size: var(--font-size-4);
+    margin-block-end: var(--size-3);
+  }
+
+  .button-list {
+    display: flex;
+    gap: var(--size-3);
+  }
+
+  button {
+    background: white;
+    color: var(--brand);
+    font-size: var(--font-size-3);
+    padding-inline: var(--size-8);
+    padding-block: var(--size-3);
+    border-radius: var(--radius-2);
+    box-shadow: var(--shadow-2);
+  }
+
+  button.primary {
+    background: var(--brand);
+    color: white;
+  }
+
+  button.primary:hover {
+    background: var(--red-7);
+  }
+
+  .promo-art > img {
+    block-size: 100%;
+    object-fit: cover;
+  }
+</style>
