@@ -1,0 +1,130 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Boom by Cindy Joseph",
+    "description": "The world's first pro-age cosmetic & skincare line",
+    "url": "https://www.boombycindyjoseph.com/",
+    "logo": {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "identifier": "boom-logo.png"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "USA"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Capmo",
+    "description": "Digital construction management software company",
+    "url": "https://www.capmo.com/",
+    "logo": {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "identifier": "capmo-logo.png"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Germany"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Finanzcheck",
+    "description": "Independent German credit comparison service",
+    "url": "https://www.finanzcheck.de/",
+    "logo": {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "identifier": "finanzcheck-logo.png"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Germany"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Fleisch Rebellen",
+    "description": "Premium Meat ordered online and delivered to your door",
+    "url": "https://fleischrebellen.de/",
+    "logo": {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "identifier": "fleisch-rebellen-logo.png"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Germany"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Karten Macherei",
+    "description": "Design and print your own cards online",
+    "url": "https://www.kartenmacherei.de/",
+    "logo": {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "identifier": "karten-macherei-logo.png"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Germany"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Retrobel",
+    "description": "Hand crafted home decorations.",
+    "url": "https://www.retrobel.com.br/",
+    "logo": {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "identifier": "retrobel-logo.png"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Brazil"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Roastmarket",
+    "description": "Premium coffee online retailer",
+    "url": "https://www.roastmarket.de/",
+    "logo": {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "identifier": "roastmarket-logo.png"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Germany"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Westwing",
+    "description": "High end interior design retailer",
+    "url": "https://www.westwing.de/",
+    "logo": {
+      "@context": "https://schema.org",
+      "@type": "ImageObject",
+      "identifier": "westwing-logo.png"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "Germany"
+    }
+  }
+]

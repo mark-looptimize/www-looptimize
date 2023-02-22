@@ -1,0 +1,29 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Looptimize",
+  "legalName": "Looptimize - Serviços de Tratamento de Dados Ltda",
+  "taxID": "CNPJ 28.331.811/0001-94",
+  "url": "https://www.looptimize.com/",
+  "address": [
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "São Paulo",
+      "addressCountry": "Brazil"
+    },
+    {
+      "@type": "PostalAddress",
+      "addressLocality": "Hamburg",
+      "addressCountry": "Germany"
+    }
+  ],
+  "founder": {
+    "@type": "Person",
+    "familyName": "Vieira",
+    "givenName": "André",
+    "nationality": {
+      "@type": "Country",
+      "name": "Brazil"
+    }
+  }
+}

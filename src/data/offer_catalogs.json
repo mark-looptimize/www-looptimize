@@ -1,0 +1,40 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    "name": "One Time Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Google Analytics Audit & Implementation",
+          "description": "Analytics Audit Service Description Goes Here"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Customer Journey Audit",
+          "description": "Customer Journey Audit Service Description Goes Here"
+        }
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    "name": "Ongoing Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Customer Journey Optimization",
+          "description": "Customer Journey Optimization Description Goes Here"
+        }
+      }
+    ]
+  }
+]
