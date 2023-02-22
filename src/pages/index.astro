@@ -1,16 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
-import companyData from '../data/company_details.json';
-import {ClientList} from '../components/ClientList.js';
+import { ClientList } from '../components/ClientList.js';
+import { CustomerTestimonials } from '../components/CustomerTestimonials';
 
-const companyName = companyData["name"];
 ---
 
 <Layout title="Looptimize: Customer Journey Optimization and Experimentation Agency">
 	<Hero />
 	<div class="wrapper">
 		<ClientList />
+		<CustomerTestimonials />
 	</div>
-	<h1>{companyName}</h1>
 </Layout>

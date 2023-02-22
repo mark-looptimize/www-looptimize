@@ -1,0 +1,48 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "givenName": "Tomas",
+      "familyName": "Erhart",
+      "jobTitle": "Managing Director",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Fleisch Rebellen",
+        "description": "Premium Meat ordered online and delivered to your door",
+        "url": "https://fleischrebellen.de/"
+      },
+      "image": {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "identifier": "tomas-erhart.png"
+      }
+    },
+    "reviewBody": "Looptimize takes care of one of the most crucial factors of an online shop: the customer journey. In order to improve our conversion rate, André and his team conducted a meticulous analysis of our most important pages, giving us many interesting insights about the present state of our website. They came up with an impressive working paper that not only explained the source of many issues harming our sales, but also contained clear recommendations and solutions to improve our customer journeys. Great people, great support.",
+    "reviewRating": "5"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
+      "givenName": "Sami",
+      "familyName": "Hamed",
+      "jobTitle": "Head of Development",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Amorelie",
+        "description": "Online retailer for Adult entertainment and toys",
+        "url": "https://www.amorelie.de"
+      },
+      "image": {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "identifier": "sami-hamed.png"
+      }
+    },
+    "reviewBody": "Looptimize takes care of one of the most crucial factors of an online shop: the customer journey. In order to improve our conversion rate, André and his team conducted a meticulous analysis of our most important pages, giving us many interesting insights about the present state of our website. They came up with an impressive working paper that not only explained the source of many issues harming our sales, but also contained clear recommendations and solutions to improve our customer journeys. Great people, great support.",
+    "reviewRating": "5"
+  }
+]

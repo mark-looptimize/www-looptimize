@@ -48,9 +48,8 @@ export class ClientList extends LitElement {
       <div class="clients">
       ${clientListData.map((client) =>
         html`
-          <span itemscope itemtype="https://schema.org/EndorsementRating">
-            <meta itemprop="ratingValue" content="5">
-            <span itemprop="author" itemscope itemtype="https://schema.org/Organization">
+          <span itemscope itemtype="https://schema.org/EndorseAction">
+            <span itemprop="agent" itemscope itemtype="https://schema.org/Organization">
               <meta itemprop="name" content="${client.name}">
               <meta itemprop="description" content="${client.description}">
               <meta itemprop="sameAs" content="${client.url}">
@@ -58,6 +57,10 @@ export class ClientList extends LitElement {
                 <meta itemprop="addressCountry" content="${client.address.addressCountry}">
               </span>
               <img src="${clientLogoPath}${client.logo.identifier}" itemprop="logo" alt="${client.name + " Logo"}" title="${client.description}">
+            </span>
+            <span itemprop="endorsee" itemscope itemtype="https://schema.org/Organization">
+              <meta itemprop="name" content="Looptimize" />
+              <meta itemprop="sameAs" content="https://www.looptimize.org" />
             </span>
           </span>
           `

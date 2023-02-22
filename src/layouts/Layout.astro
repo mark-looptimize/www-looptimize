@@ -5,28 +5,30 @@ export interface Props {
 
 const { title, url } = Astro.props;
 const canonicalUrl = new URL(url, Astro.site);
-import Header from '../components/Header.astro';
-import Footer from '../components/Footer.astro';
+import { TopNavBar } from '../components/TopNavBar.js';
+import { WebsiteFooter } from '../components/WebsiteFooter.js';
 import "../styles/global.css";
 
 import companyData from '../data/company_details.json';
 ---
 
 <!DOCTYPE html>
-<html lang="en" itemscope itemtype="https://schema.org/WebPage">
+<html lang="en">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="canonical" href={canonicalUrl}>
 		<title>{title}</title>
-		<script itemprop="mainEntity" type="application/ld+json" set:html={JSON.stringify(companyData)} />
 	</head>
-	<body>
-		<Header />
-		<main>
-			<slot />
-		</main>
-		<Footer />
+	<body itemscope itemtype="https://schema.org/WebPage">
+		<div itemprop="mainEntity" itemscope itemtype="https://schema.org/Organization">
+      <TopNavBar />
+			<main>
+				<slot />
+			</main>
+      <WebsiteFooter />
+		</div>
+		<script itemprop="mainEntity" type="application/ld+json" set:html={JSON.stringify(companyData)} />
 	</body>
 </html>
