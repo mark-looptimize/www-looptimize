@@ -27,6 +27,29 @@
     "@type": "Review",
     "author": {
       "@type": "Person",
+      "givenName": "Joe",
+      "familyName": "Smith",
+      "jobTitle": "CEO",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "Microsoft",
+        "description": "Demo Text",
+        "url": "https://www.microsoft.com/"
+      },
+      "image": {
+        "@context": "https://schema.org",
+        "@type": "ImageObject",
+        "identifier": "tomas-erhart.png"
+      }
+    },
+    "reviewBody": "Looptimize takes care of one of the most crucial factors of an online shop: the customer journey. In order to improve our conversion rate, André and his team conducted a meticulous analysis of our most important pages, giving us many interesting insights about the present state of our website. They came up with an impressive working paper that not only explained the source of many issues harming our sales, but also contained clear recommendations and solutions to improve our customer journeys. Great people, great support.",
+    "reviewRating": "5"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "Review",
+    "author": {
+      "@type": "Person",
       "givenName": "Sami",
       "familyName": "Hamed",
       "jobTitle": "Head of Development",
