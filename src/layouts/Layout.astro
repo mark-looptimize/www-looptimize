@@ -4,7 +4,7 @@ export interface Props {
 }
 
 const { title, url } = Astro.props;
-const canonicalUrl = new URL(url, Astro.site);
+const canonicalUrl = new URL(Astro.url.pathname, Astro.site);
 import { TopNavBar } from '../components/TopNavBar.js';
 import { WebsiteFooter } from '../components/WebsiteFooter.js';
 import "../styles/global.css";
