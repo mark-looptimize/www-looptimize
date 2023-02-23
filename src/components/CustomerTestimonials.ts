@@ -19,6 +19,7 @@ export class CustomerTestimonials extends LitElement {
 
       blockquote p {
         font-style: italic;
+        font-size: 1.2rem;
       }
 
       div[itemprop="author"] {
@@ -36,7 +37,7 @@ export class CustomerTestimonials extends LitElement {
         html`
           <span itemscope itemtype="https://schema.org/Review">
             <div>
-              <img 
+              <img loading="lazy" 
               src="${clientLogoPath + testimonial.author.image.identifier}" 
               alt="${`${testimonial.author.givenName} ${testimonial.author.familyName}: ${testimonial.author.jobTitle} at ${testimonial.author.worksFor.name}`}">
             </div>

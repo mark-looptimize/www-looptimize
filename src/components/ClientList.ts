@@ -1,4 +1,4 @@
-import { LitElement, html, CSSResultGroup, css } from 'lit';
+import { LitElement, html, CSSResultGroup, css, CSSResult, CSSResultOrNative } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import clientListData from "../data/endorsements.json" assert { type: "json" };
 
@@ -8,7 +8,7 @@ const tagName = 'client-list';
 
 @customElement(tagName)
 export class ClientList extends LitElement {
-  static styles: CSSResultGroup  = [
+  static styles: CSSResultGroup = [
     css`
     section {
       background-color: white;
