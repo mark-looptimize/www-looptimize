@@ -24,9 +24,8 @@ export class ClientList extends LitElement {
       text-align: center;
     }
 
-    .title {
+    h2 {
       text-transform: uppercase;
-      margin-bottom: 1rem;
     }
 
     .clients {
@@ -44,13 +43,17 @@ export class ClientList extends LitElement {
       height: fit-content;
       transform: scale(0.75);
     }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
     `
   ];
   
   render() {
     return html`
     <section>
-      <h4 class="headline-medium primary-text">Trusted by companies worldwide</h4>
+      <h2 class="headline-small primary-text uppercase">Trusted by companies worldwide</h2>
       <div class="clients">
       ${clientListData.map((client) =>
         html`
