@@ -1,17 +1,24 @@
+import { assert } from '@firebase/util';
 import { LitElement, html, CSSResultGroup, css, CSSResult, CSSResultOrNative } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import clientListData from "../data/endorsements.json" assert { type: "json" };
+import { typographyStyles } from '../styles/design-system/typography.styles.js';
+import { colorStyleModule } from '../styles/design-system/colors.styles.js';
 
 const clientLogoPath = './images/brands/';
 
 const tagName = 'client-list';
 
+// const typography = new CSSStyleSheet();
+// typography.replaceSync(typographyStyles.toString());
+
 @customElement(tagName)
 export class ClientList extends LitElement {
   static styles: CSSResultGroup = [
+    colorStyleModule,
+    typographyStyles,
     css`
     section {
-      background-color: white;
       border-radius: 3px;
       padding: var(--size-4);
       display: flex;
@@ -22,7 +29,6 @@ export class ClientList extends LitElement {
     }
 
     .title {
-      color: var(--brand);
       text-transform: uppercase;
       margin-bottom: 1rem;
     }
@@ -32,6 +38,7 @@ export class ClientList extends LitElement {
       justify-content: center;
       align-items: center;
       flex-wrap: wrap;
+      background-color: white;
     }
 
     .clients img {
@@ -44,7 +51,7 @@ export class ClientList extends LitElement {
   render() {
     return html`
     <section>
-      <h4 class="title">Trusted by companies worldwide</h4>
+      <h4 class="headline-medium primary-text">Trusted by companies worldwide</h4>
       <div class="clients">
       ${clientListData.map((client) =>
         html`
