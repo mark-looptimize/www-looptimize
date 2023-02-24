@@ -39,6 +39,9 @@ export class ClientList extends LitElement {
       align-items: center;
       flex-wrap: wrap;
       background-color: white;
+      border-radius: 5px;
+      box-shadow: var(--shadow-2);
+      border: 1px solid var(--md-sys-color-outline);
     }
 
     .clients img {
