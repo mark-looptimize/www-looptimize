@@ -9,9 +9,6 @@ const clientLogoPath = './images/brands/';
 
 const tagName = 'client-list';
 
-// const typography = new CSSStyleSheet();
-// typography.replaceSync(typographyStyles.toString());
-
 @customElement(tagName)
 export class ClientList extends LitElement {
   static styles: CSSResultGroup = [
