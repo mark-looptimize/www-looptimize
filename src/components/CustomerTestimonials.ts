@@ -15,7 +15,7 @@ export class CustomerTestimonials extends LitElement {
     colorStyleModule,
     typographyStyles,
     css`
-    h4 {
+    h2 {
       text-align: center;
     }
 
@@ -27,13 +27,17 @@ export class CustomerTestimonials extends LitElement {
     div[itemtype="https://schema.org/Person"] {
       text-align: right;
     }
+
+    .uppercase {
+      text-transform: uppercase;
+    }
     `
   ];
 
   protected render(): TemplateResult<1> {
     return html`
     <section>
-      <h4 class="headline-medium primary-text">Customer Testimonials</h4>
+      <h2 class="headline-small primary-text uppercase">Customer Testimonials</h2>
       <div class="testimonials">
       ${testimonialsData.map((testimonial) =>
         html`
