@@ -5,9 +5,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-display-large-font-family-name);
   font-style: var(--md-sys-typescale-display-large-font-family-style);
   font-weight: var(--md-sys-typescale-display-large-font-weight);
-  font-size: var(--md-sys-typescale-display-large-font-size);
-  letter-spacing: var(--md-sys-typescale-display-large-tracking);
-  line-height: var(--md-sys-typescale-display-large-height);
+  font-size: calc((var(--md-sys-typescale-display-large-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-display-large-letter-spacing);
+  line-height: var(--md-sys-typescale-display-large-line-height);
   text-transform: var(--md-sys-typescale-display-large-text-transform);
   text-decoration: var(--md-sys-typescale-display-large-text-decoration);
 }
@@ -15,9 +15,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-display-medium-font-family-name);
   font-style: var(--md-sys-typescale-display-medium-font-family-style);
   font-weight: var(--md-sys-typescale-display-medium-font-weight);
-  font-size: var(--md-sys-typescale-display-medium-font-size);
-  letter-spacing: var(--md-sys-typescale-display-medium-tracking);
-  line-height: var(--md-sys-typescale-display-medium-height);
+  font-size: calc((var(--md-sys-typescale-display-medium-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-display-medium-letter-spacing);
+  line-height: var(--md-sys-typescale-display-medium-line-height);
   text-transform: var(--md-sys-typescale-display-medium-text-transform);
   text-decoration: var(--md-sys-typescale-display-medium-text-decoration);
 }
@@ -25,9 +25,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-display-small-font-family-name);
   font-style: var(--md-sys-typescale-display-small-font-family-style);
   font-weight: var(--md-sys-typescale-display-small-font-weight);
-  font-size: var(--md-sys-typescale-display-small-font-size);
-  letter-spacing: var(--md-sys-typescale-display-small-tracking);
-  line-height: var(--md-sys-typescale-display-small-height);
+  font-size: calc((var(--md-sys-typescale-display-small-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-display-small-letter-spacing);
+  line-height: var(--md-sys-typescale-display-small-line-height);
   text-transform: var(--md-sys-typescale-display-small-text-transform);
   text-decoration: var(--md-sys-typescale-display-small-text-decoration);
 }
@@ -35,9 +35,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-headline-large-font-family-name);
   font-style: var(--md-sys-typescale-headline-large-font-family-style);
   font-weight: var(--md-sys-typescale-headline-large-font-weight);
-  font-size: var(--md-sys-typescale-headline-large-font-size);
-  letter-spacing: var(--md-sys-typescale-headline-large-tracking);
-  line-height: var(--md-sys-typescale-headline-large-height);
+  font-size: calc((var(--md-sys-typescale-headline-large-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-headline-large-letter-spacing);
+  line-height: var(--md-sys-typescale-headline-large-line-height);
   text-transform: var(--md-sys-typescale-headline-large-text-transform);
   text-decoration: var(--md-sys-typescale-headline-large-text-decoration);
 }
@@ -45,9 +45,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-headline-medium-font-family-name);
   font-style: var(--md-sys-typescale-headline-medium-font-family-style);
   font-weight: var(--md-sys-typescale-headline-medium-font-weight);
-  font-size: var(--md-sys-typescale-headline-medium-font-size);
-  letter-spacing: var(--md-sys-typescale-headline-medium-tracking);
-  line-height: var(--md-sys-typescale-headline-medium-height);
+  font-size: calc((var(--md-sys-typescale-headline-medium-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-headline-medium-letter-spacing);
+  line-height: var(--md-sys-typescale-headline-medium-line-height);
   text-transform: var(--md-sys-typescale-headline-medium-text-transform);
   text-decoration: var(--md-sys-typescale-headline-medium-text-decoration);
 }
@@ -55,9 +55,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-headline-small-font-family-name);
   font-style: var(--md-sys-typescale-headline-small-font-family-style);
   font-weight: var(--md-sys-typescale-headline-small-font-weight);
-  font-size: var(--md-sys-typescale-headline-small-font-size);
-  letter-spacing: var(--md-sys-typescale-headline-small-tracking);
-  line-height: var(--md-sys-typescale-headline-small-height);
+  font-size: calc((var(--md-sys-typescale-headline-small-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-headline-small-letter-spacing);
+  line-height: var(--md-sys-typescale-headline-small-line-height);
   text-transform: var(--md-sys-typescale-headline-small-text-transform);
   text-decoration: var(--md-sys-typescale-headline-small-text-decoration);
 }
@@ -65,9 +65,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-body-large-font-family-name);
   font-style: var(--md-sys-typescale-body-large-font-family-style);
   font-weight: var(--md-sys-typescale-body-large-font-weight);
-  font-size: var(--md-sys-typescale-body-large-font-size);
-  letter-spacing: var(--md-sys-typescale-body-large-tracking);
-  line-height: var(--md-sys-typescale-body-large-height);
+  font-size: calc((var(--md-sys-typescale-body-large-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-body-large-letter-spacing);
+  line-height: var(--md-sys-typescale-body-large-line-height);
   text-transform: var(--md-sys-typescale-body-large-text-transform);
   text-decoration: var(--md-sys-typescale-body-large-text-decoration);
 }
@@ -75,9 +75,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-body-medium-font-family-name);
   font-style: var(--md-sys-typescale-body-medium-font-family-style);
   font-weight: var(--md-sys-typescale-body-medium-font-weight);
-  font-size: var(--md-sys-typescale-body-medium-font-size);
-  letter-spacing: var(--md-sys-typescale-body-medium-tracking);
-  line-height: var(--md-sys-typescale-body-medium-height);
+  font-size: calc((var(--md-sys-typescale-body-medium-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-body-medium-letter-spacing);
+  line-height: var(--md-sys-typescale-body-medium-line-height);
   text-transform: var(--md-sys-typescale-body-medium-text-transform);
   text-decoration: var(--md-sys-typescale-body-medium-text-decoration);
 }
@@ -85,9 +85,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-body-small-font-family-name);
   font-style: var(--md-sys-typescale-body-small-font-family-style);
   font-weight: var(--md-sys-typescale-body-small-font-weight);
-  font-size: var(--md-sys-typescale-body-small-font-size);
-  letter-spacing: var(--md-sys-typescale-body-small-tracking);
-  line-height: var(--md-sys-typescale-body-small-height);
+  font-size: calc((var(--md-sys-typescale-body-small-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-body-small-letter-spacing);
+  line-height: var(--md-sys-typescale-body-small-line-height);
   text-transform: var(--md-sys-typescale-body-small-text-transform);
   text-decoration: var(--md-sys-typescale-body-small-text-decoration);
 }
@@ -95,9 +95,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-label-large-font-family-name);
   font-style: var(--md-sys-typescale-label-large-font-family-style);
   font-weight: var(--md-sys-typescale-label-large-font-weight);
-  font-size: var(--md-sys-typescale-label-large-font-size);
-  letter-spacing: var(--md-sys-typescale-label-large-tracking);
-  line-height: var(--md-sys-typescale-label-large-height);
+  font-size: calc((var(--md-sys-typescale-label-large-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-label-large-letter-spacing);
+  line-height: var(--md-sys-typescale-label-large-line-height);
   text-transform: var(--md-sys-typescale-label-large-text-transform);
   text-decoration: var(--md-sys-typescale-label-large-text-decoration);
 }
@@ -105,9 +105,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-label-medium-font-family-name);
   font-style: var(--md-sys-typescale-label-medium-font-family-style);
   font-weight: var(--md-sys-typescale-label-medium-font-weight);
-  font-size: var(--md-sys-typescale-label-medium-font-size);
-  letter-spacing: var(--md-sys-typescale-label-medium-tracking);
-  line-height: var(--md-sys-typescale-label-medium-height);
+  font-size: calc((var(--md-sys-typescale-label-medium-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-label-medium-letter-spacing);
+  line-height: var(--md-sys-typescale-label-medium-line-height);
   text-transform: var(--md-sys-typescale-label-medium-text-transform);
   text-decoration: var(--md-sys-typescale-label-medium-text-decoration);
 }
@@ -115,9 +115,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-label-small-font-family-name);
   font-style: var(--md-sys-typescale-label-small-font-family-style);
   font-weight: var(--md-sys-typescale-label-small-font-weight);
-  font-size: var(--md-sys-typescale-label-small-font-size);
-  letter-spacing: var(--md-sys-typescale-label-small-tracking);
-  line-height: var(--md-sys-typescale-label-small-height);
+  font-size: calc((var(--md-sys-typescale-label-small-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-label-small-letter-spacing);
+  line-height: var(--md-sys-typescale-label-small-line-height);
   text-transform: var(--md-sys-typescale-label-small-text-transform);
   text-decoration: var(--md-sys-typescale-label-small-text-decoration);
 }
@@ -125,9 +125,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-title-large-font-family-name);
   font-style: var(--md-sys-typescale-title-large-font-family-style);
   font-weight: var(--md-sys-typescale-title-large-font-weight);
-  font-size: var(--md-sys-typescale-title-large-font-size);
-  letter-spacing: var(--md-sys-typescale-title-large-tracking);
-  line-height: var(--md-sys-typescale-title-large-height);
+  font-size: calc((var(--md-sys-typescale-title-large-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-title-large-letter-spacing);
+  line-height: var(--md-sys-typescale-title-large-line-height);
   text-transform: var(--md-sys-typescale-title-large-text-transform);
   text-decoration: var(--md-sys-typescale-title-large-text-decoration);
 }
@@ -135,9 +135,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-title-medium-font-family-name);
   font-style: var(--md-sys-typescale-title-medium-font-family-style);
   font-weight: var(--md-sys-typescale-title-medium-font-weight);
-  font-size: var(--md-sys-typescale-title-medium-font-size);
-  letter-spacing: var(--md-sys-typescale-title-medium-tracking);
-  line-height: var(--md-sys-typescale-title-medium-height);
+  font-size: calc((var(--md-sys-typescale-title-medium-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-title-medium-letter-spacing);
+  line-height: var(--md-sys-typescale-title-medium-line-height);
   text-transform: var(--md-sys-typescale-title-medium-text-transform);
   text-decoration: var(--md-sys-typescale-title-medium-text-decoration);
 }
@@ -145,9 +145,9 @@ export const typographyStyles = css`
   font-family: var(--md-sys-typescale-title-small-font-family-name);
   font-style: var(--md-sys-typescale-title-small-font-family-style);
   font-weight: var(--md-sys-typescale-title-small-font-weight);
-  font-size: var(--md-sys-typescale-title-small-font-size);
-  letter-spacing: var(--md-sys-typescale-title-small-tracking);
-  line-height: var(--md-sys-typescale-title-small-height);
+  font-size: calc((var(--md-sys-typescale-title-small-font-size) / var(--base-font-size)) * 1rem);
+  letter-spacing: var(--md-sys-typescale-title-small-letter-spacing);
+  line-height: var(--md-sys-typescale-title-small-line-height);
   text-transform: var(--md-sys-typescale-title-small-text-transform);
   text-decoration: var(--md-sys-typescale-title-small-text-decoration);
 }
