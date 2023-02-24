@@ -1,5 +1,7 @@
 import { LitElement, html, CSSResultGroup, css, TemplateResult } from 'lit';
 import { customElement, property } from 'lit/decorators.js';
+import { colorStyleModule } from '../styles/design-system/colors.styles.js';
+
 import companyData from "../data/company_details.json" assert { type: "json" };
 
 const tagName = 'website-footer';
@@ -17,10 +19,11 @@ export class WebsiteFooter extends LitElement {
   taxIdentification = companyData.taxID;
 
   static styles: CSSResultGroup = [
+    colorStyleModule,
     css`
       footer {
-        background-color: var(--surface-2);
-        padding: var(--size-4);
+        margin-top: 2rem;
+        padding: 2rem;
         text-align: center;
       }
     `
@@ -28,10 +31,10 @@ export class WebsiteFooter extends LitElement {
 
   protected render(): TemplateResult<1> {
     return html`
-      <footer>
-  <small>
+      <footer class="surface-variant on-surface-variant-text">
+  <p class="body-small">
     &copy; ${this.currentYear} <span itemprop="legalName">${this.legalName}</span> / <span itemprop="taxID">${this.taxIdentification}</span>
-  </small>
+  </p>
 </footer>
     `;
   }

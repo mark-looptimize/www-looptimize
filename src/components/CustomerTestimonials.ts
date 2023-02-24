@@ -1,5 +1,7 @@
 import { LitElement, html, CSSResultGroup, css, TemplateResult } from 'lit';
 import { customElement } from 'lit/decorators.js';
+import { typographyStyles } from '../styles/design-system/typography.styles.js';
+import { colorStyleModule } from '../styles/design-system/colors.styles.js';
 import testimonialsData from "../data/customer_testimonials.json" assert { type: "json" };
 import companyData from "../data/company_details.json" assert { type: "json" };
 
@@ -10,48 +12,47 @@ const tagName = 'customer-testimonials';
 @customElement(tagName)
 export class CustomerTestimonials extends LitElement {
   static styles: CSSResultGroup  = [
+    colorStyleModule,
+    typographyStyles,
     css`
-      .title {
-        color: var(--brand);
-        text-transform: uppercase;
-        margin-bottom: 1rem;
-      }
+    h4 {
+      text-align: center;
+    }
 
-      blockquote p {
-        font-style: italic;
-        font-size: 1.2rem;
-      }
+    div[itemtype="https://schema.org/Review"] {
+      display: flex;
+      margin: 2rem 0;
+    }
 
-      div[itemprop="author"] {
-        font-weight: 700;
-      }
+    div[itemtype="https://schema.org/Person"] {
+      text-align: right;
+    }
     `
   ];
 
   protected render(): TemplateResult<1> {
     return html`
     <section>
-      <h4 class="title">Customer Testimonials</h4>
+      <h4 class="headline-medium primary-text">Customer Testimonials</h4>
       <div class="testimonials">
       ${testimonialsData.map((testimonial) =>
         html`
-          <span itemscope itemtype="https://schema.org/Review">
-            <div>
-              <img loading="lazy" 
+          <div itemscope itemtype="https://schema.org/Review">
+            <img loading="lazy" 
               src="${clientLogoPath + testimonial.author.image.identifier}" 
               alt="${`${testimonial.author.givenName} ${testimonial.author.familyName}: ${testimonial.author.jobTitle} at ${testimonial.author.worksFor.name}`}">
-            </div>
             <span itemprop="reviewRating" itemscope itemtype="https://schema.org/Rating">
               <meta itemprop="ratingValue" content="${testimonial.reviewRating}" />
             </span>
-            <blockquote itemprop="reviewBody">
+            <div>
+            <blockquote itemprop="reviewBody" class="title-large">
               <p>${testimonial.reviewBody}</p>
             </blockquote>
             <span itemprop="itemReviewed" itemscope itemtype="https://schema.org/Organization">
               <meta itemprop="name" content="${companyData.name}">
               <meta itemprop="sameAs" content="${companyData.url}">
             </span>
-            <div id="person" itemprop="author" itemscope itemtype="https://schema.org/Person">
+            <div id="person" itemprop="author" itemscope itemtype="https://schema.org/Person" class="title-medium">
               <meta itemprop="image" content="${new URL(testimonial.author.image.identifier, companyData.url + clientLogoPath).toString()}">
               <span itemprop="givenName">${testimonial.author.givenName}</span> 
               <span itemprop="familyName">${testimonial.author.familyName}</span>, 
@@ -62,7 +63,8 @@ export class CustomerTestimonials extends LitElement {
                 <meta itemprop="sameAs" content="${testimonial.author.worksFor.url}" />
               </span>
             </div>
-          </span>
+            </div>
+          </div>
           `
         )}
       </div>

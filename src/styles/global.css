@@ -1,8 +1,14 @@
-@import "normalize.css";
+/* @import "normalize.css"; */
 @import "utilities.css";
-@import "buttons.css";
+/* @import "buttons.css"; */
+@import url(./design-system/tokens.css);
+@import url(./design-system/colors.styles.css);
+@import url(./design-system/typography.styles.css);
+@import url(./design-system/theme.light.css) (prefers-color-scheme: light);
+@import url(./design-system/theme.dark.css) (prefers-color-scheme: dark);
 
 body {
   display: grid;
   grid-template-rows: auto 1fr auto;
+  margin: 0;
 }
