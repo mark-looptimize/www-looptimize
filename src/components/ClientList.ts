@@ -1,5 +1,4 @@
-import { assert } from '@firebase/util';
-import { LitElement, html, CSSResultGroup, css, CSSResult, CSSResultOrNative } from 'lit';
+import { LitElement, html, CSSResultGroup, css} from 'lit';
 import { customElement } from 'lit/decorators.js';
 import clientListData from "../data/endorsements.json" assert { type: "json" };
 import { typographyStyles } from '../styles/design-system/typography.styles.js';
