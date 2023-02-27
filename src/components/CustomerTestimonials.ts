@@ -62,7 +62,7 @@ export class CustomerTestimonials extends LitElement {
               <span itemprop="familyName">${testimonial.author.familyName}</span>, 
               <span itemprop="jobTitle">${testimonial.author.jobTitle}</span> at 
               <span itemprop="worksFor" itemscope itemtype="https://schema.org/Organization">
-                <span itemprop="name">${testimonial.author.worksFor.name}</span>
+                <span itemprop="name" class="headline-small">${testimonial.author.worksFor.name}</span>
                 <meta itemprop="description" content="${testimonial.author.worksFor.description}" />
                 <meta itemprop="sameAs" content="${testimonial.author.worksFor.url}" />
               </span>
