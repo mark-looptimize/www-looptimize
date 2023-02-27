@@ -25,14 +25,46 @@
   {
     "@context": "https://schema.org",
     "@type": "OfferCatalog",
-    "name": "Ongoing Services",
+    "name": "Continious Optimization Programs",
     "itemListElement": [
       {
         "@type": "Offer",
         "itemOffered": {
           "@type": "Service",
-          "name": "Customer Journey Optimization",
-          "description": "Customer Journey Optimization Description Goes Here"
+          "name": "Full Service Conversion Growth Program",
+          "description": "This is a fully managed end to end Customer Journey Optimization & A/B Testing service that covers everything needed to help ensure the highest possible chance of success.",
+          "serviceOutput": [
+            {
+              "@type": "Review",
+              "name": "Lean analytics health check",
+              "description": "Ensure that you are able to confidently trust your analytics data to support your experimentation program."
+            },
+            {
+              "@type": "Service",
+              "name": "Qualitative and quantitative research reports",
+              "description": "Our evidence based approach to testing is one of the many reasons we are able to deliver such strong results."
+            },
+            {
+              "@type": "Service",
+              "name": "Test design, development and quality assurance",
+              "description": "Free up your development pipeline to stay focused on your product roadmap and leave the testing to us."
+            },
+            {
+              "@type": "Service",
+              "name": "Test analysis and reporting",
+              "description": "With each test we will deliver a comprehensive overview of the results along with our insights and lessons learned to improve your organizational learning."
+            }
+          ],
+          "offers": [
+            {
+              "@type": "Offer",
+              "name": "Standard Partnership",
+              "priceSpecifation": {
+                
+              }
+            }
+
+          ]
         }
       }
     ]
