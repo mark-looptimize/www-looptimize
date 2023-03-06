@@ -32,9 +32,9 @@
       "jobTitle": "Head of Development",
       "worksFor": {
         "@type": "Organization",
-        "name": "Amorelie",
-        "description": "Online retailer for Adult entertainment and toys",
-        "url": "https://www.amorelie.de"
+        "name": "Finanzcheck",
+        "description": "Large German Fintech company",
+        "url": "https://www.finanzcheck.de"
       },
       "image": {
         "@context": "https://schema.org",
@@ -42,7 +42,7 @@
         "identifier": "sami-hamed.png"
       }
     },
-    "reviewBody": "Looptimize takes care of one of the most crucial factors of an online shop: the customer journey. In order to improve our conversion rate, André and his team conducted a meticulous analysis of our most important pages, giving us many interesting insights about the present state of our website. They came up with an impressive working paper that not only explained the source of many issues harming our sales, but also contained clear recommendations and solutions to improve our customer journeys. Great people, great support.",
+    "reviewBody": "André and his agency (Looptimize) are some of the most knowledgeable people I've met in my career so far in the context of CRO/experimentation. I have worked with them in a complex project to overhaul the whole CRO stack and processes at one of the largest fintech companies in Germany.",
     "reviewRating": "5"
   }
 ]

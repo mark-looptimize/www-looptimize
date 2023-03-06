@@ -1,0 +1,73 @@
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "Audience",
+    "name": "Default Audience",
+    "identifier": "https://www.looptimize.com/?aud=default"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BusinessAudience",
+    "name": "Micro Business",
+    "description": "For those still chasing their first million.",
+    "identifier": "https://www.looptimize.com/?aud=micro-business",
+    "yearlyRevenue": {
+      "@type": "QuantitativeValue",
+      "maxValue": "1000000"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BusinessAudience",
+    "name": "Small Business",
+    "description": "",
+    "identifier": "https://www.looptimize.com/?aud=small-business",
+    "yearlyRevenue": {
+      "@type": "QuantitativeValue",
+      "minValue": "1000000",
+      "maxValue": "20000000"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BusinessAudience",
+    "name": "Medium Business",
+    "description": "",
+    "identifier": "https://www.looptimize.com/?aud=medium-business",
+    "yearlyRevenue": {
+      "@type": "QuantitativeValue",
+      "minValue": "20000000",
+      "maxValue": "100000000"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BusinessAudience",
+    "name": "Large Business",
+    "description": "",
+    "identifier": "https://www.looptimize.com/?aud=large-business",
+    "yearlyRevenue": {
+      "@type": "QuantitativeValue",
+      "minValue": "100000000"
+    }
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BusinessAudience",
+    "name": "E-Commerce",
+    "identifier": "https://www.looptimize.com/?aud=ecommerce"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BusinessAudience",
+    "name": "SaaS",
+    "alternateName": "Software as a Service",
+    "identifier": "https://www.looptimize.com/?aud=saas"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "BusinessAudience",
+    "name": "Service Business",
+    "identifier": "https://www.looptimize.com/?aud=service"
+  }
+]
