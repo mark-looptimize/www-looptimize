@@ -2,29 +2,6 @@
   {
     "@context": "https://schema.org",
     "@type": "OfferCatalog",
-    "name": "One Time Services",
-    "itemListElement": [
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Google Analytics Audit & Implementation",
-          "description": "Analytics Audit Service Description Goes Here"
-        }
-      },
-      {
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": "Customer Journey Audit",
-          "description": "Customer Journey Audit Service Description Goes Here"
-        }
-      }
-    ]
-  },
-  {
-    "@context": "https://schema.org",
-    "@type": "OfferCatalog",
     "name": "Continious Optimization Programs",
     "itemListElement": [
       {
@@ -136,6 +113,98 @@
                 "@type": "Offer",
                 "name": "Test design and development",
                 "description": "Free up your development pipeline to stay focused on your product roadmap and leave the testing to us.",
+                "priceSpecification": [
+                  {
+                    "@type": "PriceSpecification",
+                    "minPrice": "2500",
+                    "priceCurrency": "EUR"
+                  },
+                  {
+                    "@type": "PriceSpecification",
+                    "minPrice": "2300",
+                    "priceCurrency": "USD"
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "OfferCatalog",
+    "name": "One Time Services",
+    "itemListElement": [
+      {
+        "@type": "Service",
+        "name": "Google Analytics Audit",
+        "description": "This is a fully managed end to end Customer Journey Optimization & A/B Testing service that covers everything needed to help ensure the highest possible chance of success.",
+        "audience": [
+          {
+            "@type": "BusinessAudience",
+            "name": "Small Business",
+            "description": "For those making between $1M - $20M in annual revenue and have at least 100,000 monthly active users.",
+            "identifier": "https://www.looptimize.com/?aud=small-business",
+            "yearlyRevenue": {
+              "@type": "QuantitativeValue",
+              "minValue": "1000000",
+              "maxValue": "20000000"
+            }
+          },
+          {
+            "@type": "BusinessAudience",
+            "name": "Medium Sized Business",
+            "description": "For those making between $20M - $100M in annual revenue and have at least 500,000 monthly active users.",
+            "identifier": "https://www.looptimize.com/?aud=small-business",
+            "yearlyRevenue": {
+              "@type": "QuantitativeValue",
+              "minValue": "1000000",
+              "maxValue": "20000000"
+            }
+          },
+          {
+            "@context": "https://schema.org",
+            "@type": "Audience",
+            "name": "Default Audience",
+            "identifier": "https://www.looptimize.com/?aud=default"
+          }
+        ],
+        "serviceOutput": [
+          {
+            "@type": "Review",
+            "name": "Best practices compliance report",
+            "description": "Ensure that you are able to confidently trust your analytics data to support your experimentation program."
+          },
+          {
+            "@type": "Service",
+            "name": "Digital Marketing Measurement Model",
+            "description": "Our evidence based approach to testing is one of the many reasons we are able to deliver such strong results."
+          }
+        ],
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Standard Partnership",
+            "availability": "https://schema.org/InStock",
+            "priceSpecification": [
+              {
+                "@type": "PriceSpecification",
+                "minPrice": "7000",
+                "priceCurrency": "EUR"
+              },
+              {
+                "@type": "PriceSpecification",
+                "minPrice": "6500",
+                "priceCurrency": "USD"
+              }
+            ],
+            "addOn": [
+              {
+                "@type": "Offer",
+                "name": "Google Tag Manager Implementation",
+                "description": "Google Tag Manager description",
                 "priceSpecification": [
                   {
                     "@type": "PriceSpecification",
