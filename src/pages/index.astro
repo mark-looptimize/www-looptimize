@@ -2,8 +2,8 @@
 import Layout from '../layouts/Layout.astro';
 import Hero from '../components/Hero.astro';
 import { ClientList } from '../components/ClientList.js';
-import { CustomerTestimonials } from '../components/CustomerTestimonials';
-
+import { CustomerTestimonials } from '../components/CustomerTestimonials.js';
+import { ServicesSection } from '../components/ServicesSection';
 ---
 
 <Layout title="Looptimize: Customer Journey Optimization and Experimentation Agency">
@@ -11,5 +11,6 @@ import { CustomerTestimonials } from '../components/CustomerTestimonials';
 	<div class="wrapper">
 		<ClientList />
 		<CustomerTestimonials />
+		<ServicesSection client:load />
 	</div>
 </Layout>
