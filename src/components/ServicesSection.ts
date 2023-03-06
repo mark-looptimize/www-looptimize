@@ -1,4 +1,4 @@
-import { LitElement, html, CSSResultGroup, css, TemplateResult, isServer } from 'lit';
+import { LitElement, html, CSSResultGroup, css, TemplateResult } from 'lit';
 import { customElement } from 'lit/decorators.js';
 import { colorStyleModule } from '../styles/design-system/colors.styles.js';
 import { typographyStyles } from '../styles/design-system/typography.styles.js';
@@ -25,10 +25,12 @@ export class ServicesSection extends LitElement {
     `
   ];
 
+  override connectedCallback(){
+    super.connectedCallback();
+    this.renderMetadata();
+  }
+
   private renderMetadata(){
-    if(isServer){
-      return;
-    }
     const offerMetadata = document.createElement('script');
     offerMetadata.setAttribute('type', 'application/ld+json');
     offerMetadata.textContent = JSON.stringify(offerData);
@@ -36,7 +38,6 @@ export class ServicesSection extends LitElement {
   }
 
   protected render(): TemplateResult<1> {
-    this.renderMetadata();
     return html`
       <section class="surface on-surface-text">
         <h2 class="headline-small primary-text uppercase">What We Offer</h2>
@@ -73,7 +74,6 @@ export class ServicesSection extends LitElement {
               `)}
             </ul>
             `)}
-            
             `
             )}  
           `
